@@ -3,45 +3,96 @@ body{
     background-image: url("img/Sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Hahmlet', serif, Apple SD Gothic Neo,arial,sans-serif;
+    color: rgb(40, 126, 255);
     }
 .container{
-    background-color: white;
+    margin-top: 1em;
+    padding: 1em;
+    background-color: rgba(233, 243, 255, 0.728);
+    border-radius: 0.5em;
     min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    box-shadow: rgba(72, 106, 149, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 .task-taps{
     display: flex;
-    border-bottom: 1px solid lightgray;
+    border-bottom: none;
     position: relative;
+    background-color: white;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
 }
 .task-taps div{
     padding: 1em 1.3em;
 }
-.task-area{
-    border: 1px solid lightgray;
-}
+
 #under-line{
     height: 4px;
-    background-color: pink;
+    background-color: rgb(159, 197, 255);
     position: absolute;
-    width: 75px;
+    width: 0px;
     left: 0;
-    top: 52px;
+    top: 0px;
     padding: 0;
+    transition: 0.5s;
 }
 .task{
     display: flex;
     justify-content: space-between;
-    padding: 1em;
-    border: 1px solid lightgray;
+    /*padding: 1em;*/
+    border: 2px solid rgb(255, 255, 255);
+    border-top: 0px;
+}
+.task-text{
+    padding: 1em 0em;
+    padding-left: 1em;
 }
 .task-done{
     text-decoration: line-through;
-    background-color: lightgray;
-}
-.list-box{
-    border: 1px solid lightgray;
 }
 .done-area{
-    background-color: lightgray;
+    background-color: rgba(211, 211, 211, 0.468);
 }
+.icon-check{
+    color: rgb(0, 209, 0);
+}
+.icon-repeat{
+    color: gray;
+}
+.icon-delate{
+    color: red;
+}
+.task-taps div{
+    cursor: pointer;
+}
+.task-button{
+    display: flex;
+}
+button{
+    width: 60px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.564);
+    margin: 0;
+    transform: scale(1.065);
+    margin-left: 2px;
+}
+#add-button{
+width: 30px;
+border-radius: 1em;
+border-color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 255);
+color: rgb(93, 158, 255);
+}
+input{
+    width: 75%;
+    border: 2px solid white;
+    border-radius: 0.5em;
+    color: rgb(40, 126, 255);
+    
+}
+input:focus{
+    outline:none;
+}
+::placeholder {
+    color: rgb(151, 193, 255);
+  }
